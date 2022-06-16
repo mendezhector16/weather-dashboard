@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dahsboard</title>
 </head>
 
 <body>
-    <header class="jumbotron">
-        <h1>
+    <header class="jumbotron text-center fw-bold">
+        <h1 class="title">
             Weather Dashboard
         </h1>
     </header>
@@ -19,12 +19,16 @@
     <main>
 
         <!-- left -->
-        <div>
+        <div class="content-left">
             <!-- search form for city -->
             <div class="container">
-                <h2>Search for a City</h2>
-                <form class="form" action="input"></form>
-                <button class="btn" type="submit">search</button>
+                <form>
+                    <label for="city-search sub-title" class="sub-title">Search for a City</label>
+                    <div>
+                        <input type="text">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
             </div>
             <!-- end search form -->
 
@@ -37,7 +41,7 @@
         <!-- end left -->
 
         <!-- right -->
-        <div>
+        <div class="content-right">
             <!-- display city with date, temp, wind, humidity, and uv index -->
             <div>
 
@@ -67,6 +71,14 @@
     <footer>
 
     </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- end jquery -->
+
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- end moment.js -->
 
     <!-- link for JavaScript -->
     <script src="./assets/js/script.js"></script>

@@ -1,0 +1,11 @@
+.jumbotron {
+    background-color: rgba(45, 84, 223, 0.672);
+    color: aliceblue;
+}
+.title {
+    font-size: 85px;
+}
+.sub-title {
+    font-size: 36px;
+    font-weight: bold;
+}
